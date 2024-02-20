@@ -33,17 +33,17 @@
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
-  time.timeZone = "America/Sao_Paulo";
+  time.timeZone = "Europe/Stockholm";
   i18n.extraLocaleSettings = {
-    LC_ADDRESS = "pt_BR.UTF-8";
-    LC_IDENTIFICATION = "pt_BR.UTF-8";
-    LC_MEASUREMENT = "pt_BR.UTF-8";
-    LC_MONETARY = "pt_BR.UTF-8";
-    LC_NAME = "pt_BR.UTF-8";
-    LC_NUMERIC = "pt_BR.UTF-8";
-    LC_PAPER = "pt_BR.UTF-8";
-    LC_TELEPHONE = "pt_BR.UTF-8";
-    LC_TIME = "pt_BR.UTF-8";
+    LC_ADDRESS = "sv_SE.UTF-8";
+    LC_IDENTIFICATION = "sv_SE.UTF-8";
+    LC_MEASUREMENT = "sv_SE.UTF-8";
+    LC_MONETARY = "sv_SE.UTF-8";
+    LC_NAME = "sv_SE.UTF-8";
+    LC_NUMERIC = "sv_SE.UTF-8";
+    LC_PAPER = "sv_SE.UTF-8";
+    LC_TELEPHONE = "sv_SE.UTF-8";
+    LC_TIME = "sv_SE.UTF-8";
   };
 
    services.xserver = {
@@ -107,9 +107,9 @@
   libevdev
 ];
   
-  users.users.enzo = {
+  users.users.linus = {
     isNormalUser = true;
-    description = "Enzo";
+    description = "Linus";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       firefox
@@ -131,10 +131,10 @@
 
   system.autoUpgrade = {
    enable = true;
-   channel = "https://nixos.org/channels/nixos-23.05";
+   channel = "https://nixos.org/channels/nixos-23.11";
   };
  
-  system.stateVersion = "23.05";
+  system.stateVersion = "23.11";
   
   #Flakes
   nix = {
