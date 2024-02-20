@@ -32,7 +32,7 @@ nixosConfigurations = {
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.enzo = import ./home/home.nix ;
+          home-manager.users.linus = import ./home/home.nix ;
           home-manager.extraSpecialArgs = specialArgs;
         }
       ];
