@@ -80,7 +80,7 @@
    dedicatedServer.openFirewall = true;
   };
   # Configure console keymap
-  console.keyMap = "br-abnt2";
+  console.keyMap = "sv-latin1";
 
   sound.enable = true;
   hardware.pulseaudio.enable = false;
