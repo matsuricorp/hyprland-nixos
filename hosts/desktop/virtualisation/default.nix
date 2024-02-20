@@ -5,7 +5,7 @@
     docker.enable = true;
   };
 
-  users.groups.docker.members = [ "enzo" ];
+  users.groups.docker.members = [ "linus" ];
 
   environment.systemPackages = with pkgs; [
     docker-compose
