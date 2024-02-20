@@ -9,8 +9,8 @@
   ];
 
   home = {
-    username = "enzo";
-    homeDirectory = "/home/enzo";
+    username = "linus";
+    homeDirectory = "/home/linus";
   };
 
   home.packages = (with pkgs; [
@@ -26,7 +26,8 @@
     lutris
     openrgb
     betterdiscord-installer
-    
+    brave
+
 
     #utils
     ranger
@@ -79,5 +80,5 @@
 
   programs.home-manager.enable = true;
 
-  home.stateVersion = "23.05";
+  home.stateVersion = "23.11";
 }
