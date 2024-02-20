@@ -18,7 +18,7 @@
     extraConfig = ''
 
     # Monitor
-    monitor=DP-1,1920x1080@165,auto,1
+    monitor=DP-1,1920x1080@60,auto,1
 
     # Fix slow startup
     exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
@@ -124,7 +124,7 @@
 
     #bind = $mainMod, RETURN, exec, cool-retro-term-zsh
     bind = $mainMod, RETURN, exec, kitty
-    bind = $mainMod, B, exec, opera --no-sandbox
+    bind = $mainMod, B, exec, brave
     bind = $mainMod, L, exec, firefox 
     bind = $mainMod, Q, killactive,
     bind = $mainMod, M, exit,
