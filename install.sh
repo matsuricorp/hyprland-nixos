@@ -22,4 +22,4 @@ if [ ! -f ~/.config/rofi/rofi.png ]; then
     cp "$DIR"/home/wallpapers/rofi.png ~/.config/rofi/
 fi
 
-sudo nixos-rebuild switch --flake .#enzo --show-trace
+sudo nixos-rebuild switch --flake .#linus --show-trace
