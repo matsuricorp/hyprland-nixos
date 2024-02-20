@@ -22,7 +22,7 @@ let
 
 in {
 nixosConfigurations = {
-    enzo = lib.nixosSystem rec {
+    linus = lib.nixosSystem rec {
       inherit system;
       specialArgs = { inherit hyprland; };
       modules = [ 
